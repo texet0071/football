@@ -1,0 +1,20 @@
+
+table {
+  width: 90%;
+  margin: 0 auto;
+  box-shadow: 0 0 5px 3px black;
+  opacity: 0.8;
+}
+
+.mat-form-field {
+  font-size: 14px;
+  width: 90%;
+  padding-left: 65px;
+}
+
+
+.card-table{
+  margin: 0 auto;
+  width: 90%;
+}
+

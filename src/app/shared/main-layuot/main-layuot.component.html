@@ -1,0 +1,61 @@
+<div class="card-table">
+  <mat-form-field appearance="standard">
+    <mat-label>Фильтер</mat-label>
+    <input class="filter-input" matInput (keyup)="applyFilter($event)" placeholder="Введите название" #input>
+  </mat-form-field>
+
+  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+    <ng-container matColumnDef="date">
+      <th mat-header-cell *matHeaderCellDef> Дата </th>
+      <td mat-cell *matCellDef="let element"> {{element.date}} </td>
+
+    </ng-container>
+
+    <ng-container matColumnDef="tur">
+      <th mat-header-cell *matHeaderCellDef> Тур </th>
+      <td mat-cell *matCellDef="let element"> {{element.tur}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="stadion">
+      <th mat-header-cell *matHeaderCellDef> Стадион </th>
+      <td mat-cell *matCellDef="let element"> {{element.stadion}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="hCommand">
+      <th mat-header-cell *matHeaderCellDef> Команда  </th>
+      <td mat-cell *matCellDef="let element"> {{element.hCommand}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="math">
+      <th mat-header-cell *matHeaderCellDef> счет </th>
+      <td mat-cell *matCellDef="let element"> {{element.math}}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="vCommand">
+      <th mat-header-cell *matHeaderCellDef> Команда </th>
+      <td mat-cell *matCellDef="let element"> {{element.vCommand}}
+      </td>
+    </ng-container>
+
+
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+
+    <tr class="mat-row" *matNoDataRow>
+      <td class="mat-cell" colspan="4">Нет подходящих результатов "{{input.value}}"</td>
+    </tr>
+  </table>
+
+</div>
+
+
+
+
+<div>
+  <router-outlet></router-outlet>
+</div>
+
+

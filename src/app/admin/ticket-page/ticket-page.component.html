@@ -1,0 +1,153 @@
+<mat-card class="example-card">
+  <mat-card-content>
+    <div class="conteiner-link">
+      <button mat-raised-button color="primary" routerLink="/">Назад</button>
+      <h2 class="example-h2">Покупка билета</h2>
+    </div>
+
+    <div class="card-command">
+
+      <mat-form-field appearance="fill">
+        <mat-label>Играют дома</mat-label>
+        <mat-select>
+          <mat-option>Выбор команды</mat-option>
+          <mat-option *ngFor="let homes of home" [value]="homes">{{homes}}</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <h2>:</h2>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Играют в гостях</mat-label>
+        <mat-select>
+          <mat-option>Выбор команды</mat-option>
+          <mat-option *ngFor="let guests of guest" [value]="guests">{{guests}}</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+    </div>
+
+
+    <mat-form-field appearance="fill" class="card-stadion">
+      <mat-label>Выбор стадиона</mat-label>
+      <mat-select>
+        <mat-option>Выбор стадиона</mat-option>
+        <mat-option *ngFor="let stadions of stadion" [value]="stadions">{{stadions}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <h2 class="example-h2">Выбор трибуны</h2>
+
+    <mat-tab-group>
+      <mat-tab label="Трибуна 1">
+        <div class="card-command">
+          <mat-form-field appearance="fill">
+            <mat-label>Выбор ряда</mat-label>
+            <mat-select>
+              <mat-option>Выбор ряда</mat-option>
+              <mat-option *ngFor="let tribuns of tribune" [value]="tribuns">{{tribuns}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+
+          <mat-form-field appearance="fill">
+            <mat-label>Выбор места</mat-label>
+            <mat-select>
+              <mat-option>Выбор места</mat-option>
+              <mat-option *ngFor="let places of place" [value]="places">{{places}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </mat-tab>
+
+      <mat-tab label="Трибуна 2">
+        <div class="card-command">
+          <mat-form-field appearance="fill">
+            <mat-label>Выбор ряда</mat-label>
+            <mat-select>
+              <mat-option>Выбор ряда</mat-option>
+              <mat-option *ngFor="let tribuns of tribune" [value]="tribuns">{{tribuns}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+
+          <mat-form-field appearance="fill">
+            <mat-label>Выбор места</mat-label>
+            <mat-select>
+              <mat-option>Выбор места</mat-option>
+              <mat-option *ngFor="let places of place" [value]="places">{{places}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </mat-tab>
+
+      <mat-tab label="Трибуна 3">
+        <div class="card-command">
+          <mat-form-field appearance="fill">
+            <mat-label>Выбор ряда</mat-label>
+            <mat-select>
+              <mat-option>Выбор ряда</mat-option>
+              <mat-option *ngFor="let tribuns of tribune" [value]="tribuns">{{tribuns}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+
+          <mat-form-field appearance="fill">
+            <mat-label>Выбор места</mat-label>
+            <mat-select>
+              <mat-option>Выбор места</mat-option>
+              <mat-option *ngFor="let places of place" [value]="places">{{places}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </mat-tab>
+
+      <mat-tab label="Трибуна 4">
+        <div class="card-command">
+          <mat-form-field appearance="fill">
+            <mat-label>Выбор ряда</mat-label>
+            <mat-select>
+              <mat-option>Выбор ряда</mat-option>
+              <mat-option *ngFor="let tribuns of tribune" [value]="tribuns">{{tribuns}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+
+          <mat-form-field appearance="fill">
+            <mat-label>Выбор места</mat-label>
+            <mat-select>
+              <mat-option>Выбор места</mat-option>
+              <mat-option *ngFor="let places of place" [value]="places">{{places}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </mat-tab>
+
+      <mat-tab label="Трибуна 5">
+        <div class="card-command">
+          <mat-form-field appearance="fill">
+            <mat-label>Выбор ряда</mat-label>
+            <mat-select>
+              <mat-option>Выбор ряда</mat-option>
+              <mat-option *ngFor="let tribuns of tribune" [value]="tribuns">{{tribuns}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+
+          <mat-form-field appearance="fill">
+            <mat-label>Выбор места</mat-label>
+            <mat-select>
+              <mat-option>Выбор места</mat-option>
+              <mat-option *ngFor="let places of place" [value]="places">{{places}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </mat-tab>
+    </mat-tab-group>
+
+
+  </mat-card-content>
+
+  <button
+    mat-raised-button color="primary"
+    routerLink="/"
+  >Купить</button>
+</mat-card>
+
+
+<router-outlet></router-outlet>

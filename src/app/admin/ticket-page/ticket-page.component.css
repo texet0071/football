@@ -1,0 +1,42 @@
+.example-h2 {
+  margin: 10px;
+  text-align: center;
+}
+
+.example-section {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  height: 60px;
+}
+
+.example-margin {
+  margin: 0 10px;
+}
+
+
+.example-button-row button,
+.example-button-row a {
+  margin-right: 8px;
+}
+
+
+.example-card {
+  max-width: 460px;
+  margin: 20px auto;
+  box-shadow: 0 0 5px 3px black;
+  opacity: 0.8;
+}
+
+.card-command {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-stadion{
+  display: flex;
+  justify-content: center;
+}
+
+
+
